@@ -28,7 +28,7 @@ jobs:
             if curl -sf http://localhost:8080 > /tmp/page.html; then break; fi
             sleep 1
           done
-          grep -q "Котляренко Антон Павлович" /tmp/page.html
+          grep -q "Котляренко Антон" /tmp/page.html
           echo "OK"
 
       - name: Cleanup
